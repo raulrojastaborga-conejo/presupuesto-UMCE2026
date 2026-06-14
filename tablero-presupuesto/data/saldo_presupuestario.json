@@ -1,6 +1,1 @@
-{
-  "updated_at": "2026-06-14",
-  "source": "Saldo_Presupuestario",
-  "note": "Dataset corregido: se eliminaron datos provisorios. Este archivo debe contener solo filas reales exportadas desde la hoja Saldo_Presupuestario.",
-  "rows": []
-}
+{"updated_at":"2026-06-14","source":"Saldo_Presupuestario","files":["saldo_presupuestario_part1.json","saldo_presupuestario_part2.json","saldo_presupuestario_part3.json","saldo_presupuestario_part4.json"],"rows_total":159}
