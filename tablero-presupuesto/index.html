@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tablero Presupuestario UMCE 2026</title>
   <link rel="stylesheet" href="styles.css" />
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <header class="hero">
@@ -23,81 +22,43 @@
 
   <main>
     <section class="filters panel">
-      <label>
-        Centro de costo
-        <select id="filtroCC">
-          <option value="">Todos</option>
-        </select>
-      </label>
-      <label>
-        Cuenta
-        <select id="filtroCuenta">
-          <option value="">Todas</option>
-        </select>
-      </label>
-      <label>
-        Buscar
-        <input id="busqueda" type="search" placeholder="Cuenta, CC o nombre..." />
-      </label>
+      <label>Centro de costo<select id="filtroCC"><option value="">Todos</option></select></label>
+      <label>Cuenta<select id="filtroCuenta"><option value="">Todas</option></select></label>
+      <label>Buscar<input id="busqueda" type="search" placeholder="Cuenta, CC o nombre..." /></label>
       <button id="limpiarFiltros">Limpiar filtros</button>
     </section>
 
     <section class="kpis">
-      <article class="kpi"><span>Presupuesto original</span><strong id="kpiOriginal">$0</strong></article>
-      <article class="kpi"><span>Ajustes netos</span><strong id="kpiAjustes">$0</strong></article>
-      <article class="kpi"><span>Presupuesto vigente</span><strong id="kpiVigente">$0</strong></article>
-      <article class="kpi"><span>Comprometido</span><strong id="kpiComprometido">$0</strong></article>
-      <article class="kpi accent"><span>Disponible</span><strong id="kpiDisponible">$0</strong></article>
+      <article class="kpi"><span>Presupuesto original</span><strong id="kpiOriginal">M$ 0</strong></article>
+      <article class="kpi"><span>Ajustes netos</span><strong id="kpiAjustes">M$ 0</strong></article>
+      <article class="kpi"><span>Presupuesto vigente</span><strong id="kpiVigente">M$ 0</strong></article>
+      <article class="kpi"><span>Comprometido</span><strong id="kpiComprometido">M$ 0</strong></article>
+      <article class="kpi accent"><span>Disponible</span><strong id="kpiDisponible">M$ 0</strong></article>
     </section>
 
     <section class="grid">
       <article class="panel chart-panel">
-        <div class="panel-title">
-          <h2>Distribución del presupuesto vigente</h2>
-          <p>Top centros de costo</p>
-        </div>
-        <canvas id="chartCC"></canvas>
+        <div class="panel-title"><h2>Top presupuesto vigente</h2><p>Centros de costo</p></div>
+        <div id="ccBars" class="bars"></div>
       </article>
-
       <article class="panel chart-panel">
-        <div class="panel-title">
-          <h2>Comprometido vs disponible</h2>
-          <p>Según filtros activos</p>
-        </div>
-        <canvas id="chartEstado"></canvas>
+        <div class="panel-title"><h2>Comprometido vs disponible</h2><p>Filtros activos</p></div>
+        <div id="estadoBars" class="bars"></div>
       </article>
     </section>
 
     <section class="panel table-panel">
-      <div class="panel-title">
-        <h2>Detalle presupuestario</h2>
-        <p id="contadorFilas">0 registros</p>
-      </div>
+      <div class="panel-title"><h2>Detalle presupuestario</h2><p id="contadorFilas">0 registros</p></div>
       <div class="table-wrap">
         <table>
-          <thead>
-            <tr>
-              <th>CC</th>
-              <th>Nombre CC</th>
-              <th>Cuenta</th>
-              <th>Original</th>
-              <th>Ajustes</th>
-              <th>Vigente</th>
-              <th>Comprometido</th>
-              <th>Disponible</th>
-              <th>% Comp.</th>
-            </tr>
-          </thead>
+          <thead><tr><th>CC</th><th>Nombre CC</th><th>Cuenta</th><th>Original</th><th>Ajustes</th><th>Vigente</th><th>Comprometido</th><th>Disponible</th><th>% Comp.</th></tr></thead>
           <tbody id="tablaBody"></tbody>
         </table>
       </div>
     </section>
   </main>
 
-  <footer>
-    Tablero de prueba generado desde Google Sheets. No usar como presupuesto oficial sin validación institucional.
-  </footer>
-
+  <footer>Tablero de prueba generado desde Google Sheets. No usar como presupuesto oficial sin validación institucional.</footer>
   <script src="app.js"></script>
 </body>
 </html>
