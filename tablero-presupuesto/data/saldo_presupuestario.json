@@ -1,67 +1,6 @@
 {
   "updated_at": "2026-06-14",
   "source": "Saldo_Presupuestario",
-  "note": "Datos de prueba iniciales. Reemplazar por exportacion real de la hoja Saldo_Presupuestario cuando este consolidada.",
-  "rows": [
-    {
-      "cc": "1140500",
-      "nombre_cc": "DEPARTAMENTO DE KINESIOLOGIA",
-      "cuenta": "HONORARIOS OTROS",
-      "presupuesto_original": 0,
-      "ajustes_netos": 0,
-      "presupuesto_vigente": 0,
-      "comprometido": 120000,
-      "disponible": -120000
-    },
-    {
-      "cc": "1140500",
-      "nombre_cc": "DEPARTAMENTO DE KINESIOLOGIA",
-      "cuenta": "VIATICOS",
-      "presupuesto_original": 0,
-      "ajustes_netos": 0,
-      "presupuesto_vigente": 0,
-      "comprometido": 0,
-      "disponible": 0
-    },
-    {
-      "cc": "1140500",
-      "nombre_cc": "DEPARTAMENTO DE KINESIOLOGIA",
-      "cuenta": "MATERIALES DE ENSEÑANZA",
-      "presupuesto_original": 0,
-      "ajustes_netos": -200000,
-      "presupuesto_vigente": -200000,
-      "comprometido": 0,
-      "disponible": -200000
-    },
-    {
-      "cc": "1001200",
-      "nombre_cc": "DIRECCION DE COMUNICACIONES",
-      "cuenta": "PUBLICIDAD Y DIFUSION",
-      "presupuesto_original": 0,
-      "ajustes_netos": -200000,
-      "presupuesto_vigente": -200000,
-      "comprometido": 0,
-      "disponible": -200000
-    },
-    {
-      "cc": "1140500",
-      "nombre_cc": "DEPARTAMENTO DE KINESIOLOGIA",
-      "cuenta": "OTROS SERVICIOS",
-      "presupuesto_original": 0,
-      "ajustes_netos": -2500000,
-      "presupuesto_vigente": -2500000,
-      "comprometido": 0,
-      "disponible": -2500000
-    },
-    {
-      "cc": "1001200",
-      "nombre_cc": "DIRECCION DE COMUNICACIONES",
-      "cuenta": "HONORARIOS ADMINISTRATIVOS",
-      "presupuesto_original": 0,
-      "ajustes_netos": 2900000,
-      "presupuesto_vigente": 2900000,
-      "comprometido": 2000000,
-      "disponible": 900000
-    }
-  ]
+  "note": "Dataset corregido: se eliminaron datos provisorios. Este archivo debe contener solo filas reales exportadas desde la hoja Saldo_Presupuestario.",
+  "rows": []
 }
